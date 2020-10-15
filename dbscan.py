@@ -24,8 +24,11 @@ class DBSCAN():
         - Define fit() method
         - Define predict() method
     '''
-
-    def __init__(self, dist=.1, min_samples=3):
+    '''
+    dist = maximum distance between neighbors (same cluster)
+    min_points = minimum number of points required to be considered for a cluster
+    '''
+    def __init__(self, dist=.1, min_points=5):
         self.dist = dist
         self.min_samples = min_samples
 
