@@ -23,14 +23,15 @@ class DBSCAN():
         - Figure out callable parameters
         - Define fit() method
         - Define predict() method
+        - Find a way to build conceptualization of border points vs. core points
     '''
     '''
     dist = maximum distance between neighbors (same cluster)
     min_points = minimum number of points required to be considered for a cluster
     '''
-    def __init__(self, dist=.1, min_points=5):
+    def __init__(self, dist=.1, min_points=3):
         self.dist = dist
-        self.min_samples = min_samples
+        self.min_points = min_points
 
     def fit():
         pass
